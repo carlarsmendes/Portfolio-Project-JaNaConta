@@ -25,7 +25,7 @@ section {
     padding: 0;
 }
 
-/* ----- NAV BAR-------- */
+/* ----- NAV BAR STYLING-------- */
 
 nav {
     /* Layout Properties */
@@ -155,7 +155,7 @@ nav #logo {
 }
 
 
-
+/* -----HEADER STYLING----------- */
 
 header {
     background: transparent url('../images/luis-quintero-Fpyn4zHIxEU-unsplash.png') 0% 0% no-repeat padding-box;
@@ -192,6 +192,7 @@ header {
 
 
 
+
 /* ------GENERAL SECTIONS STYLING------- */
 
 .section-container {
@@ -223,10 +224,13 @@ header {
 }
 
 
-
-
-
-
+/* ----SPECIIC SECTIONS---- */
+#logo-image {
+    background: transparent url('../images/big_logo2x.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    min-height: 30vh;
+    border: 0;
+}
 
 #credito-facil {
     background: #F4F4F4 0% 0% no-repeat padding-box;
@@ -245,6 +249,12 @@ header {
     letter-spacing: 0;
     color: #0D4269;
     opacity: 1;
+}
+
+#credito-facil #big-logo {
+    width: 220px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #00CDE1;
 }
 
 /* ------Somos uma ESC SECTION------- */
