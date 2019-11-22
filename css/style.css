@@ -392,14 +392,19 @@ header {
   text-align: left;
 }
 
+#text-separator {
+  display: none;
+}
+
+/* ------------MEDIA QUERIES BEGIN--------------------------------- */
 /* MEDIA QUERIES FOR I PAD LANDSCAPE AND PORTRAIT */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   header {
-    min-height: 60vh;
-    border: 3px solid green;
+    min-height: 50vh;
+    /* border: 3px solid green; */
     font-size: 28px;
-    width: 100%;
+    /* width: 100%; */
     background-image: url("../images/luis-quintero-Fpyn4zHIxEU-unsplash@2x.png");
     opacity: 1;
     background-size: cover;
@@ -414,22 +419,52 @@ header {
     padding: 25px 45px;
   }
 
-  header h1 {
-    font-size: 45px;
+  #gradient-div h1 {
+    font-size: 40px;
+    font-weight: 700;
+    /* border: 3px solid yellow; */
+    margin: auto;
+    width: 70%;
+    padding-bottom: 5%;
   }
 
   header {
     background-size: 100%;
   }
 
+  #credito-facil img#big-logo {
+    width: 315px;
+  }
+
+  /* #credito-facil {
+    width: 80%;
+  } */
+
   #credito-facil,
   #somos-uma-ESC,
   #missao {
-    min-height: 45vh;
+    min-height: 30vh;
     /* border: 3px solid red; */
-    padding-right: 20%;
-    padding-left: 20%;
-    width: calc(100% - 40%);
+    padding-right: 25%;
+    padding-left: 25%;
+    width: calc(100% - 50%);
+  }
+
+  #credito-facil h2,
+  #somos-uma-ESC h2,
+  #missao h2 {
+    font-size: 25px;
+  }
+
+  #credito-facil,
+  #somos-uma-ESC,
+  #missao p {
+    font-size: 16px;
+    /* line-height: 1.6; */
+  }
+
+  #contato {
+    min-height: 25vh;
   }
 
   #contato #email-telefone {
@@ -446,9 +481,34 @@ header {
     padding-left: 10px;
   }
 
-  /* #icon-navbar {
-    display: none;
-  } */
+  #contato #address {
+    display: flex;
+    flex-direction: row;
+    /* justify-items: center; */
+    justify-content: center;
+    /* align-content: center;
+    align-items: center; */
+    /* border: 3px solid orange; */
+  }
+
+  #contato #address p {
+    /* border: 3px solid greenyellow; */
+    width: 30%;
+    min-width: 30%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #footer {
+    min-height: 15vh;
+    padding-right: 25%;
+    padding-left: 25%;
+    width: calc(100% - 50%);
+  }
+
+  #footer p {
+    font-size: 12px;
+  }
 
   nav i,
   i,
@@ -456,8 +516,12 @@ header {
   nav #icon-navbar-container {
     display: none;
   }
-}
 
+  #text-separator {
+    display: inline;
+  }
+}
+/* ------------------------------------------------------------ */
 /* ------MEDIA QUERIES FOR DESKTOP COMPUTERS------ */
 
 @media only screen and (min-device-width: 1025px) {
@@ -590,5 +654,9 @@ header {
 
   #footer p {
     font-size: 16px;
+  }
+
+  #text-separator {
+    display: inline;
   }
 }
