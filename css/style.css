@@ -63,6 +63,7 @@ nav a {
   text-decoration: none;
   font-size: 14px;
   color: #0d4269;
+  /* border: 3px solid greenyellow; */
 }
 
 /* Change the color of links on hover */
@@ -74,6 +75,39 @@ nav a:hover {
 
 nav #logo {
   width: 114px;
+  /* border: 3px solid yellowgreen; */
+}
+
+nav #icon-navbar {
+  color: #0d4269;
+  font-size: 14px;
+  vertical-align: middle;
+  /* border: 3px solid orange; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  /* font-family: "univia-pro"; */
+}
+
+#icon-navbar.fa.fa-bars::before {
+  color: #0d4269;
+  font-size: 14px;
+  vertical-align: middle;
+  /* border: 3px solid green; */
+  /* font-family: "univia-pro"; */
+}
+
+nav #icon-navbar strong {
+  font-family: "univia-pro";
+  /* border: 3px solid yellow; */
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2;
+  padding-left: 4px;
+  /* vertical-align: middle; */
+  /* margin-bottom: 10px; */
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -169,6 +203,7 @@ header {
 #gradient-div h1 {
   transform: rotate(-180deg);
   color: white;
+  font-size: 20px;
 }
 
 /* ------GENERAL SECTIONS STYLING------- */
@@ -182,18 +217,22 @@ header {
   justify-content: center;
   text-align: left;
   overflow: hidden;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+
+  min-height: 45vh;
 }
 
 .section-container p {
-  font-size: 18px;
+  font-size: 14px;
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-.section-container h1 {
-  font-size: 24px;
-  text-align: center;
-  border: 3px solid white;
+.section-container h2 {
+  font-size: 16px;
+  text-align: left;
+  /* border: 3px solid white; */
 }
 
 .underlined-title {
@@ -218,6 +257,8 @@ header {
 }
 
 #credito-facil h2 {
+  /* border-top: 1px solid #00cde1; */
+  padding: 10px;
   letter-spacing: 0;
   color: #00cde1;
   opacity: 1;
@@ -230,7 +271,7 @@ header {
 }
 
 #credito-facil #big-logo {
-  width: 220px;
+  width: 183px;
   padding-bottom: 20px;
   border-bottom: 1px solid #00cde1;
 }
@@ -247,10 +288,6 @@ header {
   opacity: 1;
   padding: 10vw 10vw;
   width: 80vw;
-}
-
-#somos-uma-ESC p {
-  font-size: 18px;
 }
 
 #somos-uma-ESC .underlined-title,
@@ -280,7 +317,7 @@ header {
   opacity: 1;
   padding-top: 5vw;
   padding-bottom: 5vw;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #contato a:hover {
@@ -317,7 +354,7 @@ header {
   width: 80%;
   text-align: center;
   margin: auto;
-  padding: 5px;
+  padding: 3px;
 }
 
 #social-media {
@@ -338,9 +375,10 @@ header {
   opacity: 1;
   color: #828282;
   text-align: left;
-  padding: 5vw 10vw;
-  width: 80vw;
+  padding: 1vw 5vw;
+  width: 90vw;
   margin: 0;
+  min-height: 30vh;
 }
 
 #footer p {
