@@ -127,7 +127,8 @@ nav #icon-navbar strong {
     /* border: 3px solid yellow; */
     /* border-top: 1px solid grey; */
     width: 100%;
-    box-shadow: 0px -5px 5px -5px #0000002c;
+    box-shadow: 0px -6px 5px -4px #0000002c;
+    padding-top: 30px;
   }
 
   nav i {
@@ -157,13 +158,18 @@ nav #icon-navbar strong {
 
   nav.responsive i {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20px;
+    top: 16px;
+    font-weight: 300;
   }
 
   nav.responsive a {
     float: none;
     display: block;
+    font-size: 12px;
+    color: #0d4269;
+    font-weight: 500;
+    /* padding-top: 3px; */
     /* text-align: left; */
   }
 }
@@ -373,8 +379,7 @@ header {
 #footer {
   background: #d7dbdb 0% 0% no-repeat padding-box;
   opacity: 1;
-  color: #828282;
-  text-align: left;
+  /* color: #828282; */
   padding: 1vw 5vw;
   width: 90vw;
   margin: 0;
@@ -383,6 +388,8 @@ header {
 
 #footer p {
   font-size: 10px;
+  color: #828282;
+  text-align: left;
 }
 
 /* MEDIA QUERIES FOR I PAD LANDSCAPE AND PORTRAIT */
