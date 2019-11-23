@@ -198,8 +198,7 @@ header {
   height: 30%;
   width: calc(100vw-45px);
   transform: matrix(-1, 0, 0, -1, 0, 0);
-  background: transparent linear-gradient(180deg, #00cde1 0%, #00cde100 100%) 0%
-    0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #00cde1 0%, #00cde100 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
   text-orientation: mixed;
   transform: rotate(-180deg);
@@ -248,8 +247,7 @@ header {
 
 /* ----SPECIIC SECTIONS---- */
 #logo-image {
-  background: transparent url("../images/big_logo2x.png") 0% 0% no-repeat
-    padding-box;
+  background: transparent url("../images/big_logo2x.png") 0% 0% no-repeat padding-box;
   background-size: cover;
   min-height: 30vh;
   border: 0;
@@ -521,6 +519,7 @@ header {
     display: inline;
   }
 }
+
 /* ------------------------------------------------------------ */
 /* ------MEDIA QUERIES FOR DESKTOP COMPUTERS------ */
 
@@ -659,4 +658,44 @@ header {
   #text-separator {
     display: inline;
   }
+}
+
+
+
+
+/* ---------STYLING THE 404 PAGE--------- */
+
+#body-404 {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+#container-404 {
+  border: 1px solid #c5c5c5;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  background-color: #f4f4f4;
+  color: #0d4269;
+  padding: 10%;
+  width: 60%;
+  margin: auto;
+  min-width: 500px;
+  text-align: center;
+
+}
+
+#container-404 h1 {
+  color: #00cde1;
+  font-size: 40px;
+}
+
+#container-404 a {
+  color: #00cde1;
+  font-weight: 500;
+  text-decoration: none;
 }

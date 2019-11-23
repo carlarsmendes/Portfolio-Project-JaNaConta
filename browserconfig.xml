@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+   <msapplication>
+     <tile>
+        <wide310x150logo src="./images/logo_janaconta.svg"/>
+     </tile>
+   </msapplication>
+</browserconfig>
