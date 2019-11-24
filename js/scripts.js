@@ -6,9 +6,12 @@ function myFunction() {
   var $navBar = document.getElementById("myTopnav");
   var $crossIcon = document.getElementById("icon-navbar");
 
+  var $buttonCTA = document.getElementById("cta-entrar");
+
   console.log($navBar);
   if ($navBar.className === "floating-fixed-element topnav") {
     $navBar.className += " responsive";
+    $buttonCTA.className += " responsive";
     $crossIcon.className = "fa fa-times";
     $crossIcon.innerText = "";
     console.log("enter the if");
@@ -26,15 +29,17 @@ function myFunction() {
       let elem = links[i];
       elem.addEventListener("click", () => {
         $navBar.className = "floating-fixed-element topnav";
+        $buttonCTA.className = "button";
         $crossIcon.className = "fa fa-bars";
-        $crossIcon.innerText = " MENU";
+        $crossIcon.innerText = "";
       });
       //   // elem.onclick =
     }
   } else if (($navBar.className = "floating-fixed-element topnav")) {
     $navBar.className = "floating-fixed-element topnav";
+    $buttonCTA.className = "button";
     $crossIcon.className = "fa fa-bars";
-    $crossIcon.innerText = " MENU";
+    $crossIcon.innerText = "";
     console.log("enter the else");
   }
 }

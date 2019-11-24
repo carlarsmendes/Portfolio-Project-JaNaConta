@@ -156,6 +156,10 @@ nav #icon-navbar strong {
         will-change: transform; */
   }
 
+  #cta-entrar.responsive {
+    display: none;
+  }
+
   nav.responsive i {
     position: absolute;
     right: 20px;
@@ -173,6 +177,27 @@ nav #icon-navbar strong {
     /* text-align: left; */
   }
 }
+
+#cta-entrar {
+  border-radius: 0;
+  font-size: 10px;
+  font-weight: 500;
+  color: #00cde1;
+  background-color: white;
+  /* border: 0; */
+  border-right: 1px solid #D7DBDB;
+  margin-right: 10px;
+  height: 16px;
+  padding: 0 10px 0 0;
+  box-shadow: none;
+}
+
+#separator-entrar {
+  display: none;
+  /* color: #D7DBDB; */
+}
+
+
 
 /* -----HEADER STYLING----------- */
 
@@ -243,6 +268,13 @@ header {
 .underlined-title {
   padding-bottom: 8px;
   border-bottom: 1px solid white;
+}
+
+.button {
+  background-color: #00CDE1;
+  color: white;
+  box-shadow: 0px 2px 5px #00000029;
+  padding: 20px;
 }
 
 /* ----SPECIIC SECTIONS---- */
@@ -394,6 +426,10 @@ header {
   display: none;
 }
 
+#cta-entrar-bigScreen {
+  display: hidden;
+}
+
 /* ------------MEDIA QUERIES BEGIN--------------------------------- */
 /* MEDIA QUERIES FOR I PAD LANDSCAPE AND PORTRAIT */
 
@@ -518,6 +554,21 @@ header {
   #text-separator {
     display: inline;
   }
+
+  /* ---STYLING BUTTON ON NAV BAR-------- */
+  .button {
+    background-color: #00CDE1;
+    color: white;
+    box-shadow: 0px 2px 5px #00000029;
+    padding: 20px;
+  }
+
+  #cta-entrar-bigScreen {
+    background-color: #00CDE1;
+    color: white;
+    box-shadow: 0px 2px 5px #00000029;
+    padding: 20px;
+  }
 }
 
 /* ------------------------------------------------------------ */
@@ -544,6 +595,10 @@ header {
     height: 30%;
     width: calc(100vw-45px);
     padding: 25px 45px;
+  }
+
+  #gradient-div h1 {
+    font-size: 84px;
   }
 
   .section-container p {
@@ -657,6 +712,13 @@ header {
 
   #text-separator {
     display: inline;
+  }
+
+  nav i,
+  i,
+  #icon-navbar,
+  nav #icon-navbar-container {
+    display: none;
   }
 }
 
