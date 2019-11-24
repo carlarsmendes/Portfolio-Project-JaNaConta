@@ -18,13 +18,7 @@ function myFunction() {
     console.log("$navBar.className-->", $navBar.className);
     //Target all the links
     let links = $navBar.getElementsByTagName("a");
-    // links.forEach(elem => {
-    //   elem.addEventListener("click", event => {
-    //     $navBar.className = "floating-fixed-element topnav";
-    //     $crossIcon.className = "fa fa-bars";
-    //     $crossIcon.innerText = " MENU";
-    //   });
-    // });
+
     for (let i = 0; i < links.length; i++) {
       let elem = links[i];
       elem.addEventListener("click", () => {
@@ -33,7 +27,6 @@ function myFunction() {
         $crossIcon.className = "fa fa-bars";
         $crossIcon.innerText = "";
       });
-      //   // elem.onclick =
     }
   } else if (($navBar.className = "floating-fixed-element topnav")) {
     $navBar.className = "floating-fixed-element topnav";
