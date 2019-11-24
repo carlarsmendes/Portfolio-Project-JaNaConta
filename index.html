@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" dir="rtl">
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Language" content="pt-br">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <!-- Document Title -->
@@ -20,6 +19,8 @@
   <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
   <!-- Has no effect unless you have the previous meta tag -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-config" content="browserconfig.xml" />
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="https://use.typekit.net/cru8tug.css" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -29,7 +30,7 @@
 <body>
   <div id="main-container">
     <nav class="floating-fixed-element topnav" id="myTopnav">
-      <a href="#"><img id="logo" src="./images/logo_janaconta.svg" /></a>
+      <a href="#"><img id="logo" src="./images/logo_janaconta.svg" alt="JanaConta logo" /></a>
       <a href="#somos-uma-ESC" class="active">Somos uma ESC</a>
       <a href="#missao">Nossa Missão</a>
       <a href="#contato">Contato</a>
@@ -48,7 +49,7 @@
       </div>
     </header>
     <section id="credito-facil" class="section-container">
-      <img id="big-logo" src="./images/big_logo.svg" />
+      <img id="big-logo" src="./images/big_logo.svg" alt="JanaConta logo" />
       <div id="two-columns-container">
         <div class="two-columns column-left">
           <h2>O crédito rápido e fácil que o seu negócio precisa</h2>
@@ -98,9 +99,9 @@
         <p>Telefone: 55 0000 0000</p>
       </div>
       <div id="social-media" class="centered-div">
-        <a src=""><img class="smedia-icon" src="./images/facebook_icon.svg" alt="facebook-logo" /></a>
-        <a src=""><img class="smedia-icon" src="./images/insta_icon.svg" alt="instagram-logo" /></a>
-        <a src=""><img class="smedia-icon" src="./images/linkedin_icon.svg" alt="linkedin-logo" /></a>
+        <a href="#external-link"><img class="smedia-icon" src="./images/facebook_icon.svg" alt="facebook-logo" /></a>
+        <a href="#external-link"><img class="smedia-icon" src="./images/insta_icon.svg" alt="instagram-logo" /></a>
+        <a href="#external-link"><img class="smedia-icon" src="./images/linkedin_icon.svg" alt="linkedin-logo" /></a>
       </div>
       <div id="address" class="centered-div">
         <p>Rua Lorem Ipsum 000</p>
@@ -118,8 +119,8 @@
         vero eros et accumsan et iusto odio
       </p>
     </footer>
-    </section>
-    <script src="./js/scripts.js"></script>
+  </div>
+  <script src="./js/scripts.js"></script>
 </body>
 
 </html>
