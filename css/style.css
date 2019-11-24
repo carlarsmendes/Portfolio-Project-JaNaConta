@@ -29,8 +29,14 @@ section {
 nav {
   /* Layout Properties */
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   top: 30px;
   left: 10vw;
@@ -41,6 +47,7 @@ nav {
   /* margin-left: 37px; */
   /* UI Properties */
   background: #ffffff 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 2px 5px #00000043;
   box-shadow: 0px 2px 5px #00000043;
   opacity: 1;
   overflow: hidden;
@@ -53,8 +60,14 @@ nav a img {
 }
 
 nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   float: left;
   display: block;
@@ -83,9 +96,16 @@ nav #icon-navbar {
   font-size: 14px;
   vertical-align: middle;
   /* border: 3px solid orange; */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-item-align: center;
   align-self: center;
   /* font-family: "univia-pro"; */
 }
@@ -114,8 +134,14 @@ nav #icon-navbar strong {
 @media screen and (max-width: 600px) {
   nav {
     position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -127,6 +153,7 @@ nav #icon-navbar strong {
     /* border: 3px solid yellow; */
     /* border-top: 1px solid grey; */
     width: 100%;
+    -webkit-box-shadow: 0px -6px 5px -4px #0000002c;
     box-shadow: 0px -6px 5px -4px #0000002c;
     padding-top: 30px;
   }
@@ -142,8 +169,15 @@ nav #icon-navbar strong {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     top: 0;
     left: 0;
@@ -189,6 +223,7 @@ nav #icon-navbar strong {
   margin-right: 10px;
   height: 16px;
   padding: 0 10px 0 0;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -211,26 +246,42 @@ header {
   opacity: 1;
   height: 330px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
   flex-flow: column;
   margin: 0;
   padding: 0;
   text-align: left;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
 #gradient-div {
   height: 30%;
   width: calc(100vw-45px);
+  -webkit-transform: matrix(-1, 0, 0, -1, 0, 0);
+  -ms-transform: matrix(-1, 0, 0, -1, 0, 0);
   transform: matrix(-1, 0, 0, -1, 0, 0);
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#00cde1), to(#00cde100)) 0% 0% no-repeat padding-box;
+  background: transparent -o-linear-gradient(top, #00cde1 0%, #00cde100 100%) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(180deg, #00cde1 0%, #00cde100 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
+  -webkit-text-orientation: mixed;
   text-orientation: mixed;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
   padding: 25px 45px;
 }
 
 #gradient-div h1 {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
   color: white;
   font-size: 20px;
@@ -241,9 +292,18 @@ header {
 .section-container {
   /* border: 3px solid red; */
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: left;
   overflow: hidden;
@@ -273,6 +333,7 @@ header {
 .button {
   background-color: #00CDE1;
   color: white;
+  -webkit-box-shadow: 0px 2px 5px #00000029;
   box-shadow: 0px 2px 5px #00000029;
   padding: 20px;
 }
@@ -396,9 +457,17 @@ header {
 #social-media {
   /* border: 3px solid yellowgreen; */
   margin: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
   flex-flow: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -502,9 +571,17 @@ header {
   }
 
   #contato #email-telefone {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
     flex-flow: row;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 10px;
     width: 60vw;
@@ -516,9 +593,16 @@ header {
   }
 
   #contato #address {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     /* justify-items: center; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     /* align-content: center;
     align-items: center; */
@@ -559,6 +643,7 @@ header {
   .button {
     background-color: #00CDE1;
     color: white;
+    -webkit-box-shadow: 0px 2px 5px #00000029;
     box-shadow: 0px 2px 5px #00000029;
     padding: 20px;
   }
@@ -566,6 +651,7 @@ header {
   #cta-entrar-bigScreen {
     background-color: #00CDE1;
     color: white;
+    -webkit-box-shadow: 0px 2px 5px #00000029;
     box-shadow: 0px 2px 5px #00000029;
     padding: 20px;
   }
@@ -615,7 +701,9 @@ header {
     /* border: 3px solid yellow; */
     text-align: center;
     height: 100px;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-line-pack: baseline;
     align-content: baseline;
   }
 
@@ -633,7 +721,12 @@ header {
   }
 
   #credito-facil {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     /* border: 3px solid green; */
     font-size: 35px;
@@ -646,7 +739,11 @@ header {
 
   #credito-facil #two-columns-container {
     /* border-top: 1px solid #00cde1; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 70vw;
   }
@@ -684,9 +781,17 @@ header {
   }
 
   #contato #email-telefone {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
     flex-flow: row;
+    -ms-flex-line-pack: center;
     align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 10px;
     width: 60vw;
@@ -728,7 +833,11 @@ header {
 /* ---------STYLING THE 404 PAGE--------- */
 
 #body-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   height: 100vh;
 
@@ -737,7 +846,6 @@ header {
 #container-404 {
   border: 1px solid #c5c5c5;
   -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
-  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
   box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
