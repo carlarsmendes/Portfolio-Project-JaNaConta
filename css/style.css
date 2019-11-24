@@ -373,6 +373,21 @@ header {
   border-bottom: 1px solid #00cde1;
 }
 
+#cta-credito-quero {
+  text-align: center;
+  background: #00CDE1 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 5px #00000029;
+  border-radius: 8px;
+  /* border: 3px solid yellowgreen; */
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  /* margin: 50px auto 50px auto; */
+  /* padding: 0; */
+  margin: 15px;
+
+}
+
 /* ------Somos uma ESC SECTION------- */
 
 #somos-uma-ESC {
@@ -537,6 +552,7 @@ header {
 
   #credito-facil img#big-logo {
     width: 315px;
+    margin-top: 20px;
   }
 
   /* #credito-facil {
@@ -645,7 +661,7 @@ header {
     color: white;
     -webkit-box-shadow: 0px 2px 5px #00000029;
     box-shadow: 0px 2px 5px #00000029;
-    padding: 20px;
+    padding: 15px;
   }
 
   #cta-entrar-bigScreen {
@@ -653,7 +669,11 @@ header {
     color: white;
     -webkit-box-shadow: 0px 2px 5px #00000029;
     box-shadow: 0px 2px 5px #00000029;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 3%;
   }
 }
 
@@ -699,10 +719,11 @@ header {
 
   nav {
     /* border: 3px solid yellow; */
+    padding: 0 2%;
     text-align: center;
     height: 100px;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+    justify-content: space-between;
     -ms-flex-line-pack: baseline;
     align-content: baseline;
   }
@@ -730,29 +751,50 @@ header {
     flex-direction: column;
     /* border: 3px solid green; */
     font-size: 35px;
-    /* height: 40vh; */
+    min-height: 60vh;
   }
 
   #credito-facil #big-logo {
     width: 537px;
+    border-bottom: 0;
   }
 
   #credito-facil #two-columns-container {
     /* border-top: 1px solid #00cde1; */
+    border-top: 1px solid #00CDE1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    width: 70vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50vw;
+    /* border-top: 1px solid green; */
   }
 
-  #credito-facil h2,
+
+  #credito-facil h2 {
+    font-size: 35px;
+    /* border: 3px solid yellow; */
+    padding: 0;
+    line-height: 49px;
+  }
+
+
+
   #somos-uma-ESC h2,
   #missao h2 {
     font-size: 26px;
   }
+
+  #credito-facil,
+  #somos-uma-ESC,
+  #missao p {
+    font-size: 20px;
+    /* line-height: 1.6; */
+  }
+
 
   .two-columns {
     /* border: 3px solid yellow; */
@@ -764,10 +806,14 @@ header {
   #somos-uma-ESC,
   #missao {
     min-height: 40vh;
-    padding-right: 20%;
-    padding-left: 20%;
-    width: calc(100% - 40%);
+    padding-right: 25%;
+    padding-left: 25%;
+    width: calc(100% - 50%);
   }
+
+
+
+
 
   #logo-image {
     min-height: 80vh;
@@ -825,6 +871,29 @@ header {
   nav #icon-navbar-container {
     display: none;
   }
+
+
+  /* ---STYLING BUTTON ON NAV BAR-------- */
+  .button {
+    /* background-color: #00CDE1;
+    color: white;
+    -webkit-box-shadow: 0px 2px 5px #00000029;
+    box-shadow: 0px 2px 5px #00000029;
+    padding: 15px; */
+  }
+
+  #cta-entrar-bigScreen {
+    /* background-color: #00CDE1;
+    color: white;
+    -webkit-box-shadow: 0px 2px 5px #00000029;
+    box-shadow: 0px 2px 5px #00000029; */
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    /* font-weight: 600;
+    margin-left: 3%; */
+  }
+
 }
 
 
