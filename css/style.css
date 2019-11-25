@@ -613,9 +613,6 @@ header {
     margin-top: 20px;
   }
 
-  /* #credito-facil {
-    width: 80%;
-  } */
   #logo-image {
     height: 350px;
   }
@@ -794,7 +791,7 @@ header {
   }
 
   nav #logo {
-    width: 200px;
+    width: 150px;
   }
 
   .section-container#credito-facil {
@@ -985,7 +982,7 @@ header {
   }
 
   #cta-entrar-bigScreen {
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
     font: Bold 16px/16px "univia-pro";
     min-width: 70px;
