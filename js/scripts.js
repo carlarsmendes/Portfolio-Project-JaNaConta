@@ -9,35 +9,34 @@ function myFunction() {
   var $buttonCTA = document.getElementById("cta-entrar");
 
   console.log($navBar);
-  if ($navBar.className === "floating-fixed-element topnav") {
+  if ($navBar.className === "floating-fixed-element topnav slide-in-right") {
     $navBar.className += " responsive";
     $buttonCTA.className += " responsive";
     $crossIcon.className = "fa fa-times";
     $crossIcon.innerText = "";
-    console.log("enter the if");
-    console.log("$navBar.className-->", $navBar.className);
+
     //Target all the links
     let links = $navBar.getElementsByTagName("a");
 
     for (let i = 0; i < links.length; i++) {
       let elem = links[i];
       elem.addEventListener("click", () => {
-        $navBar.className = "floating-fixed-element topnav";
+        $navBar.className = "floating-fixed-element topnav slide-in-right";
         $buttonCTA.className = "button";
         $crossIcon.className = "fa fa-bars";
         $crossIcon.innerText = "";
       });
     }
-  } else if (($navBar.className = "floating-fixed-element topnav")) {
-    $navBar.className = "floating-fixed-element topnav";
+  } else if (
+    ($navBar.className = "floating-fixed-element topnav slide-in-right")
+  ) {
+    $navBar.className = "floating-fixed-element topnav slide-in-right";
     $buttonCTA.className = "button";
     $crossIcon.className = "fa fa-bars";
     $crossIcon.innerText = "";
-    console.log("enter the else");
   }
 }
 
 $menuIcon.addEventListener("click", myFunction);
 
 var $navBar = document.getElementById("myTopnav");
-console.log($navBar.className);
