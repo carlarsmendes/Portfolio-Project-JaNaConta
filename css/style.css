@@ -575,7 +575,15 @@ header {
   nav {
     min-width: 608px;
     max-width: 1008px;
+    align-items: baseline;
   }
+
+  nav a {
+    font-weight: 500;
+    border: 3px solid yellow;
+    line-height: 12px;
+  }
+
   header {
     min-height: 50vh;
     /* border: 3px solid green; */
@@ -711,9 +719,6 @@ header {
   #icon-navbar,
   nav #icon-navbar-container {
     display: none;
-  }
-  nav a {
-    font-weight: 500;
   }
 
   #text-separator {
@@ -880,7 +885,7 @@ header {
 
   #somos-uma-ESC p,
   #missao p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #contato {
@@ -913,7 +918,7 @@ header {
 
   #contato #email-telefone p,
   #contato #address p {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   #contato .smedia-icon {
