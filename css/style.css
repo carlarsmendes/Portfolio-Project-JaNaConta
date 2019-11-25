@@ -777,7 +777,7 @@ header {
     /* border: 3px solid yellow; */
     padding: 0 2vw;
     text-align: center;
-    height: 90px;
+    height: 80px;
     -ms-flex-pack: distribute;
     justify-content: space-between;
     -ms-flex-line-pack: baseline;
@@ -1052,7 +1052,7 @@ header {
     /* border: 3px solid yellow; */
     padding: 0 2%;
     text-align: center;
-    height: 120px;
+    height: 110px;
     -ms-flex-pack: distribute;
     justify-content: space-between;
     -ms-flex-line-pack: baseline;
