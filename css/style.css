@@ -190,6 +190,13 @@ nav #icon-navbar strong {
         will-change: transform; */
   }
 
+  nav.responsive .button {
+    color: white;
+    border-radius: 8px;
+    padding: 10px 40px;
+    margin: 10px 0;
+  }
+
   #cta-entrar.responsive {
     display: none;
   }
@@ -207,8 +214,13 @@ nav #icon-navbar strong {
     font-size: 12px;
     color: #0d4269;
     font-weight: 500;
+
     /* padding-top: 3px; */
     /* text-align: left; */
+  }
+
+  nav.responsive a:hover {
+    cursor: pointer;
   }
 }
 
@@ -660,13 +672,7 @@ header {
   }
 
   /* ---STYLING BUTTON ON NAV BAR-------- */
-  /* .button {
-    background-color: #00CDE1;
-    color: white;
-    -webkit-box-shadow: 0px 2px 5px #00000029;
-    box-shadow: 0px 2px 5px #00000029;
-    padding: 15px;
-  } */
+
 
   #cta-entrar-bigScreen {
     background-color: #00CDE1;
