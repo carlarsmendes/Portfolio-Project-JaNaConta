@@ -747,8 +747,6 @@ header {
 
   header {
     min-height: 100vh;
-    /* border: 3px solid green; */
-    /* font-size: 40px; */
     width: 100%;
     /* background: transparent url('../images/brooke-cagle-NoRsyXmHGpI-unsplash@2x.png') 0% 0% no-repeat padding-box; */
     opacity: 1;
@@ -762,11 +760,6 @@ header {
     padding-left: 20%;
     width: calc(100% - 40%);
   }
-
-  /* .section-container p {
-    font-size: 24px;
-    line-height: 1.5;
-  } */
 
   .section-container h2 {
     font-size: 35px;
@@ -801,7 +794,7 @@ header {
   }
 
   nav #logo {
-    width: 258px;
+    width: 200px;
   }
 
   .section-container#credito-facil {
@@ -819,16 +812,13 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    /* border: 3px solid green; */
-    font-size: 35px;
-    min-height: 700px;
-    /* height: 60%; */
+    min-height: 650px;
   }
 
   #credito-facil #big-logo {
-    width: 537px;
+    width: 437px;
     border-bottom: 0;
-    margin: 60px;
+    margin: 40px;
   }
 
   #credito-facil #two-columns-container {
@@ -841,8 +831,6 @@ header {
     -ms-flex-align: center;
     justify-content: space-between;
     align-items: flex-start;
-
-    /* border-top: 1px solid green; */
   }
 
   #credito-facil h2 {
@@ -865,11 +853,10 @@ header {
     font-size: 26px;
   }
 
-  #credito-facil,
-  #somos-uma-ESC,
+  #credito-facil p,
+  #somos-uma-ESC p,
   #missao p {
     font-size: 20px;
-    /* line-height: 1.6; */
   }
 
   .two-columns {
@@ -1162,7 +1149,7 @@ header {
   }
 
   #logo-image {
-    height: 75vh;
+    height: 80vh;
     min-height: 500px;
     background-size: cover;
     border: 0;
