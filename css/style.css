@@ -777,7 +777,7 @@ header {
     /* border: 3px solid yellow; */
     padding: 0 2vw;
     text-align: center;
-    height: 120px;
+    height: 100px;
     -ms-flex-pack: distribute;
     justify-content: space-between;
     -ms-flex-line-pack: baseline;
