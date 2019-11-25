@@ -985,10 +985,10 @@ header {
   }
 
   #cta-entrar-bigScreen {
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     font: Bold 16px/16px "univia-pro";
-    min-width: 86px;
+    min-width: 70px;
   }
 }
 
