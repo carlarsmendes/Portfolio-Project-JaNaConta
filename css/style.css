@@ -575,12 +575,12 @@ header {
   nav {
     min-width: 608px;
     max-width: 1008px;
-    align-items: baseline;
+    align-items: center;
   }
 
   nav a {
     font-weight: 500;
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
     line-height: 12px;
   }
 
