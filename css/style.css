@@ -131,7 +131,7 @@ nav #icon-navbar strong {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   nav {
     position: fixed;
     display: -webkit-box;
@@ -568,11 +568,14 @@ header {
 /* ------------MEDIA QUERIES BEGIN--------------------------------- */
 /* MEDIA QUERIES FOR I PAD LANDSCAPE AND PORTRAIT */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
   /* nav a {
     font: Medium 12px/16px "Univia-Pro";
   } */
-
+  nav {
+    min-width: 608px;
+    max-width: 1008px;
+  }
   header {
     min-height: 50vh;
     /* border: 3px solid green; */
@@ -584,6 +587,10 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
   }
+
+  /* header {
+    background-size: 100%;
+  } */
 
   #gradient-div {
     /* border: 3px solid yellow; */
@@ -601,10 +608,6 @@ header {
     padding-bottom: 5%;
   }
 
-  header {
-    background-size: 100%;
-  }
-
   #credito-facil img#big-logo {
     width: 315px;
     margin-top: 20px;
@@ -613,6 +616,9 @@ header {
   /* #credito-facil {
     width: 80%;
   } */
+  #logo-image {
+    height: 350px;
+  }
 
   #credito-facil,
   #somos-uma-ESC,
@@ -655,7 +661,7 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 10px;
-    width: 60vw;
+    width: fit-content;
   }
 
   #contato #email-telefone p {
@@ -709,6 +715,9 @@ header {
   nav #icon-navbar-container {
     display: none;
   }
+  nav a {
+    font-weight: 500;
+  }
 
   #text-separator {
     display: inline;
@@ -729,10 +738,277 @@ header {
   }
 }
 
-/* ------------------------------------------------------------ */
-/* ------MEDIA QUERIES FOR DESKTOP COMPUTERS------ */
+/* ------MEDIA QUERIES FOR MEDIUM SIZE DESKTOP COMPUTERS------ */
 
-@media only screen and (min-device-width: 1025px) {
+@media only screen and (min-device-width: 1201px) and (max-device-width: 1700px) {
+  #icon-navbar {
+    display: none;
+  }
+
+  header {
+    min-height: 100vh;
+    /* border: 3px solid green; */
+    /* font-size: 40px; */
+    width: 100%;
+    /* background: transparent url('../images/brooke-cagle-NoRsyXmHGpI-unsplash@2x.png') 0% 0% no-repeat padding-box; */
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #gradient-div h1 {
+    font-size: 50px;
+    padding-right: 20%;
+    padding-left: 20%;
+    width: calc(100% - 40%);
+  }
+
+  /* .section-container p {
+    font-size: 24px;
+    line-height: 1.5;
+  } */
+
+  .section-container h2 {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+
+  nav {
+    /* border: 3px solid yellow; */
+    padding: 0 2vw;
+    text-align: center;
+    height: 120px;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    -ms-flex-line-pack: baseline;
+    align-content: baseline;
+    width: 70vw;
+    /* max-width: 1200px; */
+    /* min-width: 608px;
+     */
+    /* margin: auto; */
+    left: 14vw;
+  }
+
+  nav a {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    /* border: 3px solid green; */
+    padding: 0;
+    margin: 0;
+    /* border: 3px solid yellow */
+  }
+
+  nav #logo {
+    width: 258px;
+  }
+
+  .section-container#credito-facil {
+    /* border: 3px solid green; */
+    padding-right: 25%;
+    padding-left: 25%;
+    width: calc(100% - 50%);
+  }
+
+  #credito-facil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* border: 3px solid green; */
+    font-size: 35px;
+    min-height: 700px;
+    /* height: 60%; */
+  }
+
+  #credito-facil #big-logo {
+    width: 537px;
+    border-bottom: 0;
+    margin: 60px;
+  }
+
+  #credito-facil #two-columns-container {
+    /* border-top: 1px solid #00cde1; */
+    border-top: 2px solid #00cde1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* border-top: 1px solid green; */
+  }
+
+  #credito-facil h2 {
+    font-size: 35px;
+    /* border: 3px solid yellow; */
+    padding: 0;
+    line-height: 49px;
+  }
+
+  #cta-credito-quero {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 16px;
+    /* margin: 15px; */
+  }
+
+  #somos-uma-ESC h2,
+  #missao h2 {
+    font-size: 26px;
+  }
+
+  #credito-facil,
+  #somos-uma-ESC,
+  #missao p {
+    font-size: 20px;
+    /* line-height: 1.6; */
+  }
+
+  .two-columns {
+    /* border: 3px solid yellow; */
+    width: 47%;
+    padding: 10px;
+  }
+
+  #somos-uma-ESC,
+  #missao {
+    min-height: 30vh;
+    padding-right: 30%;
+    padding-left: 30%;
+    width: calc(100% - 60%);
+  }
+
+  #logo-image {
+    height: 600px;
+    min-height: 500px;
+    background-size: cover;
+    border: 0;
+    background-position: center;
+  }
+
+  #somos-uma-ESC p,
+  #missao p {
+    font-size: 25px;
+  }
+
+  #contato {
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    /* font-weight: 500; */
+  }
+
+  #contato #email-telefone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 5px 50px;
+    width: fit-content;
+  }
+
+  #contato #email-telefone p {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  #contato #email-telefone p,
+  #contato #address p {
+    font-size: 22px;
+  }
+
+  #contato .smedia-icon {
+    width: 40px;
+  }
+
+  #contato #address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    /* justify-items: center; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    /* align-content: center;
+    align-items: center; */
+    /* border: 3px solid orange; */
+  }
+
+  #contato #address p {
+    /* border: 3px solid greenyellow; */
+    width: fit-content;
+    /* min-width: 30%; */
+    padding: 3px;
+    margin: 0;
+  }
+
+  #social-media {
+    /* border: 3px solid yellowgreen; */
+    margin: 1vw;
+  }
+
+  #social-media img {
+    padding: 0 10px;
+  }
+
+  #footer {
+    min-height: 8vh;
+    padding-right: 25%;
+    padding-left: 25%;
+    width: calc(100% - 50%);
+  }
+
+  #footer p {
+    font-size: 12px;
+  }
+
+  #text-separator {
+    display: inline;
+  }
+
+  nav i,
+  i,
+  #icon-navbar,
+  nav #icon-navbar-container {
+    display: none;
+  }
+
+  /* ---STYLING BUTTON ON NAV BAR-------- */
+  .button {
+    font: Bold 20px/28px "univia-pro";
+  }
+
+  #cta-entrar-bigScreen {
+    padding: 20px;
+    border-radius: 8px;
+    font: Bold 16px/16px "univia-pro";
+    min-width: 86px;
+  }
+}
+
+/* ------------------------------------------------------------ */
+/* ------MEDIA QUERIES FOR BIGGER SCREEN DESKTOP COMPUTERS------ */
+
+@media only screen and (min-device-width: 1701px) {
   #icon-navbar {
     display: none;
   }
@@ -782,6 +1058,9 @@ header {
     -ms-flex-line-pack: baseline;
     align-content: baseline;
     width: 60vw;
+    /* max-width: 1200px; */
+    /* min-width: 608px;
+     */
     /* margin: auto; */
     left: 18vw;
   }
@@ -817,8 +1096,8 @@ header {
     flex-direction: column;
     /* border: 3px solid green; */
     font-size: 35px;
-    min-height: 60vh;
-    height: 60vh;
+    min-height: 700px;
+    /* height: 60%; */
   }
 
   #credito-facil #big-logo {
