@@ -188,6 +188,39 @@ nav #icon-navbar strong {
     /* transform: translateX(100%);
         transition: transform .3s;
         will-change: transform; */
+
+    -webkit-animation: slide-in-right 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: slide-in-right 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+  @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   nav.responsive .button {
@@ -231,7 +264,7 @@ nav #icon-navbar strong {
   color: #00cde1;
   background-color: white;
   /* border: 0; */
-  border-right: 1px solid #D7DBDB;
+  border-right: 1px solid #d7dbdb;
   margin-right: 10px;
   height: 16px;
   padding: 0 10px 0 0;
@@ -243,8 +276,6 @@ nav #icon-navbar strong {
   display: none;
   /* color: #D7DBDB; */
 }
-
-
 
 /* -----HEADER STYLING----------- */
 
@@ -279,9 +310,17 @@ header {
   -webkit-transform: matrix(-1, 0, 0, -1, 0, 0);
   -ms-transform: matrix(-1, 0, 0, -1, 0, 0);
   transform: matrix(-1, 0, 0, -1, 0, 0);
-  background: transparent -webkit-gradient(linear, left top, left bottom, from(#00cde1), to(#00cde100)) 0% 0% no-repeat padding-box;
-  background: transparent -o-linear-gradient(top, #00cde1 0%, #00cde100 100%) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(180deg, #00cde1 0%, #00cde100 100%) 0% 0% no-repeat padding-box;
+  background: transparent -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#00cde1),
+      to(#00cde100)
+    ) 0% 0% no-repeat padding-box;
+  background: transparent -o-linear-gradient(top, #00cde1 0%, #00cde100 100%) 0%
+    0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #00cde1 0%, #00cde100 100%) 0%
+    0% no-repeat padding-box;
   opacity: 1;
   -webkit-text-orientation: mixed;
   text-orientation: mixed;
@@ -343,7 +382,7 @@ header {
 }
 
 .button {
-  background-color: #00CDE1;
+  background-color: #00cde1;
   color: white;
   -webkit-box-shadow: 0px 2px 5px #00000029;
   box-shadow: 0px 2px 5px #00000029;
@@ -352,7 +391,8 @@ header {
 
 /* ----SPECIIC SECTIONS---- */
 #logo-image {
-  background: transparent url("../images/big_logo2x.png") 0% 0% no-repeat padding-box;
+  background: transparent url("../images/big_logo2x.png") 0% 0% no-repeat
+    padding-box;
   background-size: cover;
   min-height: 30vh;
   border: 0;
@@ -387,7 +427,7 @@ header {
 
 #cta-credito-quero {
   text-align: center;
-  background: #00CDE1 0% 0% no-repeat padding-box;
+  background: #00cde1 0% 0% no-repeat padding-box;
   box-shadow: 0px 2px 5px #00000029;
   border-radius: 8px;
   /* border: 3px solid yellowgreen; */
@@ -397,7 +437,6 @@ header {
   /* margin: 50px auto 50px auto; */
   /* padding: 0; */
   margin: 15px;
-
 }
 
 /* ------Somos uma ESC SECTION------- */
@@ -643,10 +682,14 @@ header {
 
   #contato #address p {
     /* border: 3px solid greenyellow; */
-    width: 30%;
-    min-width: 30%;
-    padding: 0;
+    /* width: 30%; */
+    /* min-width: 30%; */
+    /* padding: 0; */
     margin: 0;
+    width: fit-content;
+    /* min-width: 30%; */
+    padding: 3px;
+    /* margin: 0; */
   }
 
   #footer {
@@ -673,9 +716,8 @@ header {
 
   /* ---STYLING BUTTON ON NAV BAR-------- */
 
-
   #cta-entrar-bigScreen {
-    background-color: #00CDE1;
+    background-color: #00cde1;
     color: white;
     -webkit-box-shadow: 0px 2px 5px #00000029;
     box-shadow: 0px 2px 5px #00000029;
@@ -720,7 +762,6 @@ header {
     width: calc(100% - 40%);
   }
 
-
   .section-container p {
     font-size: 24px;
     line-height: 1.5;
@@ -746,7 +787,6 @@ header {
   }
 
   nav a {
-
     font-size: 22px;
     line-height: 26px;
     font-weight: 600;
@@ -766,8 +806,6 @@ header {
     padding-left: 25%;
     width: calc(100% - 50%);
   }
-
-
 
   #credito-facil {
     display: -webkit-box;
@@ -791,7 +829,7 @@ header {
 
   #credito-facil #two-columns-container {
     /* border-top: 1px solid #00cde1; */
-    border-top: 2px solid #00CDE1;
+    border-top: 2px solid #00cde1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -802,8 +840,6 @@ header {
 
     /* border-top: 1px solid green; */
   }
-
-
 
   #credito-facil h2 {
     font-size: 35px;
@@ -820,7 +856,6 @@ header {
     /* margin: 15px; */
   }
 
-
   #somos-uma-ESC h2,
   #missao h2 {
     font-size: 26px;
@@ -833,13 +868,11 @@ header {
     /* line-height: 1.6; */
   }
 
-
   .two-columns {
     /* border: 3px solid yellow; */
     width: 47%;
     padding: 10px;
   }
-
 
   #somos-uma-ESC,
   #missao {
@@ -867,7 +900,6 @@ header {
     padding-bottom: 2vw;
     /* font-weight: 500; */
   }
-
 
   #contato #email-telefone {
     display: -webkit-box;
@@ -925,7 +957,6 @@ header {
     margin: 0;
   }
 
-
   #social-media {
     /* border: 3px solid yellowgreen; */
     margin: 1vw;
@@ -934,9 +965,6 @@ header {
   #social-media img {
     padding: 0 10px;
   }
-
-
-
 
   #footer {
     min-height: 8vh;
@@ -960,7 +988,6 @@ header {
     display: none;
   }
 
-
   /* ---STYLING BUTTON ON NAV BAR-------- */
   .button {
     font: Bold 20px/28px "univia-pro";
@@ -971,13 +998,8 @@ header {
     border-radius: 8px;
     font: Bold 16px/16px "univia-pro";
     min-width: 86px;
-
   }
-
 }
-
-
-
 
 /* ---------STYLING THE 404 PAGE--------- */
 
@@ -989,13 +1011,12 @@ header {
   -ms-flex-pack: center;
   justify-content: center;
   height: 100vh;
-
 }
 
 #container-404 {
   border: 1px solid #c5c5c5;
-  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   background-color: #f4f4f4;
@@ -1005,7 +1026,6 @@ header {
   margin: auto;
   min-width: 500px;
   text-align: center;
-
 }
 
 #container-404 h1 {
