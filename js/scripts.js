@@ -69,3 +69,6 @@ var $navBar = document.getElementById("myTopnav");
 //     } // End if
 //   });
 // });
+$(function() {
+  $(".lazy").Lazy();
+});
