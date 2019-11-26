@@ -204,18 +204,21 @@ nav #icon-navbar strong {
       transform: translateX(1000px);
       opacity: 0;
     }
+
     100% {
       -webkit-transform: translateX(0);
       transform: translateX(0);
       opacity: 1;
     }
   }
+
   @keyframes slide-in-right {
     0% {
       -webkit-transform: translateX(1000px);
       transform: translateX(1000px);
       opacity: 0;
     }
+
     100% {
       -webkit-transform: translateX(0);
       transform: translateX(0);
@@ -310,17 +313,13 @@ header {
   -webkit-transform: matrix(-1, 0, 0, -1, 0, 0);
   -ms-transform: matrix(-1, 0, 0, -1, 0, 0);
   transform: matrix(-1, 0, 0, -1, 0, 0);
-  background: transparent -webkit-gradient(
-      linear,
+  background: transparent -webkit-gradient(linear,
       left top,
       left bottom,
       from(#00cde1),
-      to(#00cde100)
-    ) 0% 0% no-repeat padding-box;
-  background: transparent -o-linear-gradient(top, #00cde1 0%, #00cde100 100%) 0%
-    0% no-repeat padding-box;
-  background: transparent linear-gradient(180deg, #00cde1 0%, #00cde100 100%) 0%
-    0% no-repeat padding-box;
+      to(#00cde100)) 0% 0% no-repeat padding-box;
+  background: transparent -o-linear-gradient(top, #00cde1 0%, #00cde100 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #00cde1 0%, #00cde100 100%) 0% 0% no-repeat padding-box;
   opacity: 1;
   -webkit-text-orientation: mixed;
   text-orientation: mixed;
@@ -391,8 +390,7 @@ header {
 
 /* ----SPECIIC SECTIONS---- */
 #logo-image {
-  background: transparent url("../images/big_logo2x.png") 0% 0% no-repeat
-    padding-box;
+  background: transparent url("../images/big_logo2x.png") 0% 0% no-repeat padding-box;
   background-size: cover;
   min-height: 30vh;
   border: 0;
@@ -569,6 +567,7 @@ header {
 /* MEDIA QUERIES FOR I PAD LANDSCAPE AND PORTRAIT */
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
+
   /* nav a {
     font: Medium 12px/16px "Univia-Pro";
   } */
@@ -796,7 +795,7 @@ header {
   }
 
   nav #logo {
-    width: 150px;
+    width: 200px;
   }
 
   .section-container#credito-facil {
@@ -1065,7 +1064,8 @@ header {
   }
 
   nav #logo {
-    width: 258px;
+    width: 230px;
+    margin-bottom: 6px;
   }
 
   .section-container#credito-facil {
