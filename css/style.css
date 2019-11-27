@@ -231,6 +231,8 @@ nav #icon-navbar strong {
     border-radius: 8px;
     padding: 10px 40px;
     margin: 10px 0;
+        /* TEMPORARY CHANGES */
+        display: none;
   }
 
   #cta-entrar.responsive {
@@ -240,7 +242,7 @@ nav #icon-navbar strong {
   nav.responsive i {
     position: absolute;
     right: 20px;
-    top: 16px;
+    top: 20px;
     font-weight: 300;
   }
 
@@ -549,7 +551,9 @@ header {
   padding: 1vw 5vw;
   width: 90vw;
   margin: 0;
-  min-height: 30vh;
+  /* TEMPORARY */
+  /* min-height: 30vh; */
+  min-height: 10vh;
 }
 
 #footer p {
@@ -566,11 +570,11 @@ header {
   display: hidden;
 }
 
-footer {
+/* footer {
   -webkit-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
-}
+} */
 
 /* ------------MEDIA QUERIES BEGIN--------------------------------- */
 /* MEDIA QUERIES FOR I PAD LANDSCAPE AND PORTRAIT */
@@ -715,7 +719,9 @@ footer {
   }
 
   #footer {
-    min-height: 15vh;
+      /* TEMPORARY */
+  /* min-height: 10vh; */
+    min-height: 5vh;
     padding-right: 25%;
     padding-left: 25%;
     width: calc(100% - 50%);
@@ -976,7 +982,9 @@ footer {
   }
 
   #footer {
-    min-height: 8vh;
+          /* TEMPORARY */
+  /* min-height: 8vh; */
+    min-height: 4vh;
     padding-right: 25%;
     padding-left: 25%;
     width: calc(100% - 50%);
@@ -1256,7 +1264,9 @@ footer {
   }
 
   #footer {
-    min-height: 8vh;
+              /* TEMPORARY */
+  /* min-height: 8vh; */
+    min-height: 4vh;
     padding-right: 25%;
     padding-left: 25%;
     width: calc(100% - 50%);
