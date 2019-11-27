@@ -104,11 +104,11 @@ nav #icon-navbar strong {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 10px;
-    letter-spacing: 2;
+    letter-spacing: 2px;
     padding-left: 4px
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:767px) {
     nav {
         position: fixed;
         display: -webkit-box;
@@ -159,64 +159,65 @@ nav #icon-navbar strong {
         -webkit-animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94);
         animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94)
     }
+}
 
-    @-webkit-keyframes slide-in-right {
-        0% {
-            -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-            opacity: 0
-        }
-
-        100% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity: 1
-        }
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0
     }
 
-    @keyframes slide-in-right {
-        0% {
-            -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
-            opacity: 0
-        }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
+    }
+}
 
-        100% {
-            -webkit-transform: translateX(0);
-            transform: translateX(0);
-            opacity: 1
-        }
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0
     }
 
-    nav.responsive .button {
-        color: #fff;
-        border-radius: 8px;
-        padding: 10px 40px;
-        margin: 10px 0
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1
     }
+}
 
-    #cta-entrar.responsive {
-        display: none
-    }
+nav.responsive .button {
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 40px;
+    margin: 10px 0;
+    display: none
+}
 
-    nav.responsive i {
-        position: absolute;
-        right: 20px;
-        top: 16px;
-        font-weight: 300
-    }
+#cta-entrar.responsive {
+    display: none
+}
 
-    nav.responsive a {
-        float: none;
-        display: block;
-        font-size: 12px;
-        color: #0d4269;
-        font-weight: 500
-    }
+nav.responsive i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: 300
+}
 
-    nav.responsive a:hover {
-        cursor: pointer
-    }
+nav.responsive a {
+    float: none;
+    display: block;
+    font-size: 12px;
+    color: #0d4269;
+    font-weight: 500
+}
+
+nav.responsive a:hover {
+    cursor: pointer
 }
 
 #cta-entrar {
@@ -230,7 +231,8 @@ nav #icon-navbar strong {
     height: 16px;
     padding: 0 10px 0 0;
     -webkit-box-shadow: none;
-    box-shadow: none
+    box-shadow: none;
+    display: none
 }
 
 #separator-entrar {
@@ -238,7 +240,7 @@ nav #icon-navbar strong {
 }
 
 header {
-    background-image: url(../images/luis-quintero-Fpyn4zHIxEU-unsplash.png);
+    background-image: url(../images/luis-quintero-Fpyn4zHIxEU-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
@@ -333,7 +335,7 @@ header {
 }
 
 #logo-image {
-    background: transparent url(../images/big_logo2x.png) 0 0 no-repeat padding-box;
+    background: transparent url(../images/brooke-cagle-with-logo.jpg) 0 0 no-repeat padding-box;
     background-size: cover;
     min-height: 30vh;
     border: 0
@@ -342,7 +344,7 @@ header {
 #credito-facil {
     background: #f4f4f4 0 0 no-repeat padding-box;
     opacity: 1;
-    padding: 25px 25px;
+    padding: 25px;
     width: calc(100% - 50px)
 }
 
@@ -373,7 +375,8 @@ header {
     color: #fff;
     font-weight: 700;
     font-size: 16px;
-    margin: 15px
+    margin: 15px;
+    display: none
 }
 
 #somos-uma-ESC {
@@ -383,7 +386,7 @@ header {
     letter-spacing: 0;
     color: #fff;
     opacity: 1;
-    padding: 10vw 10vw;
+    padding: 10vw;
     width: 80vw
 }
 
@@ -476,7 +479,7 @@ header {
     padding: 1vw 5vw;
     width: 90vw;
     margin: 0;
-    min-height: 30vh
+    min-height: 10vh
 }
 
 #footer p {
@@ -508,7 +511,7 @@ header {
     header {
         min-height: 50vh;
         font-size: 28px;
-        background-image: url(../images/luis-quintero-Fpyn4zHIxEU-unsplash@2x.png);
+        background-image: url(../images/luis-quintero-Fpyn4zHIxEU-unsplash@2x.jpg);
         opacity: 1;
         background-size: cover;
         background-repeat: no-repeat;
@@ -535,7 +538,8 @@ header {
     }
 
     #logo-image {
-        height: 350px
+        height: 350px;
+        background-image: url(../images/brooke-cagle-with-logo@2x.jpg)
     }
 
     #credito-facil,
@@ -605,7 +609,7 @@ header {
     }
 
     #footer {
-        min-height: 15vh;
+        min-height: 5vh;
         padding-right: 25%;
         padding-left: 25%;
         width: calc(100% - 50%)
@@ -635,7 +639,8 @@ header {
         border-radius: 8px;
         font-size: 12px;
         font-weight: 600;
-        margin-left: 3%
+        margin-left: 3%;
+        display: none
     }
 }
 
@@ -647,6 +652,7 @@ header {
     header {
         min-height: 100vh;
         width: 100%;
+        background-image: url(../images/luis-quintero-Fpyn4zHIxEU-unsplash@2x.jpg);
         opacity: 1;
         background-size: cover;
         background-repeat: no-repeat
@@ -732,7 +738,8 @@ header {
         font-size: 20px;
         padding-left: 30px;
         padding-right: 30px;
-        border-radius: 16px
+        border-radius: 16px;
+        display: none
     }
 
     #missao h2,
@@ -764,7 +771,8 @@ header {
         min-height: 500px;
         background-size: cover;
         border: 0;
-        background-position: center
+        background-position: center;
+        background-image: url(../images/brooke-cagle-with-logo@2x.jpg)
     }
 
     #missao p,
@@ -836,7 +844,7 @@ header {
     }
 
     #footer {
-        min-height: 8vh;
+        min-height: 4vh;
         padding-right: 25%;
         padding-left: 25%;
         width: calc(100% - 50%)
@@ -865,7 +873,8 @@ header {
         padding: 12px;
         border-radius: 8px;
         font: Bold 16px/16px univia-pro;
-        min-width: 70px
+        min-width: 70px;
+        display: none
     }
 }
 
@@ -976,7 +985,8 @@ header {
         font-size: 20px;
         padding-left: 30px;
         padding-right: 30px;
-        border-radius: 16px
+        border-radius: 16px;
+        display: none
     }
 
     #missao h2,
@@ -1008,7 +1018,8 @@ header {
         min-height: 500px;
         background-size: cover;
         border: 0;
-        background-position: center
+        background-position: center;
+        background-image: url(../images/brooke-cagle-with-logo@2x.jpg)
     }
 
     #missao p,
@@ -1080,7 +1091,7 @@ header {
     }
 
     #footer {
-        min-height: 8vh;
+        min-height: 4vh;
         padding-right: 25%;
         padding-left: 25%;
         width: calc(100% - 50%)
@@ -1109,7 +1120,8 @@ header {
         padding: 20px;
         border-radius: 8px;
         font: Bold 16px/16px univia-pro;
-        min-width: 86px
+        min-width: 86px;
+        display: none
     }
 }
 
