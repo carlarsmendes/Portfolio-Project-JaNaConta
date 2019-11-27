@@ -1,0 +1,1150 @@
+* {
+    font-family: univia-pro
+}
+
+body #main-container,
+html,
+html body {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    overflow-x: hidden
+}
+
+html {
+    width: 100%;
+    scroll-behavior: smooth
+}
+
+section {
+    margin: 0;
+    padding: 0
+}
+
+nav {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 30px;
+    left: 10vw;
+    margin: auto;
+    width: 80vw;
+    height: 65px;
+    background: #fff 0 0 no-repeat padding-box;
+    -webkit-box-shadow: 0 2px 5px #00000043;
+    box-shadow: 0 2px 5px #00000043;
+    opacity: 1;
+    overflow: hidden;
+    z-index: 9
+}
+
+nav a img {
+    margin: auto
+}
+
+nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #0d4269
+}
+
+nav a:hover {
+    cursor: pointer
+}
+
+nav #logo {
+    width: 114px
+}
+
+nav #icon-navbar {
+    color: #0d4269;
+    font-size: 14px;
+    vertical-align: middle;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
+#icon-navbar.fa.fa-bars::before {
+    color: #0d4269;
+    font-size: 14px;
+    vertical-align: middle
+}
+
+nav #icon-navbar strong {
+    font-family: univia-pro;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2;
+    padding-left: 4px
+}
+
+@media only screen and (max-width:768px) {
+    nav {
+        position: fixed;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    nav a:not(:first-child) {
+        display: none
+    }
+
+    nav a:nth-child(2) {
+        width: 100%;
+        -webkit-box-shadow: 0 -6px 5px -4px #0000002c;
+        box-shadow: 0 -6px 5px -4px #0000002c;
+        padding-top: 30px
+    }
+
+    nav i {
+        float: right;
+        display: block
+    }
+
+    nav.responsive {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        -webkit-animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94);
+        animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94)
+    }
+
+    @-webkit-keyframes slide-in-right {
+        0% {
+            -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+            opacity: 0
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1
+        }
+    }
+
+    @keyframes slide-in-right {
+        0% {
+            -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+            opacity: 0
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1
+        }
+    }
+
+    nav.responsive .button {
+        color: #fff;
+        border-radius: 8px;
+        padding: 10px 40px;
+        margin: 10px 0
+    }
+
+    #cta-entrar.responsive {
+        display: none
+    }
+
+    nav.responsive i {
+        position: absolute;
+        right: 20px;
+        top: 16px;
+        font-weight: 300
+    }
+
+    nav.responsive a {
+        float: none;
+        display: block;
+        font-size: 12px;
+        color: #0d4269;
+        font-weight: 500
+    }
+
+    nav.responsive a:hover {
+        cursor: pointer
+    }
+}
+
+#cta-entrar {
+    border-radius: 0;
+    font-size: 10px;
+    font-weight: 500;
+    color: #00cde1;
+    background-color: #fff;
+    border-right: 1px solid #d7dbdb;
+    margin-right: 10px;
+    height: 16px;
+    padding: 0 10px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+#separator-entrar {
+    display: none
+}
+
+header {
+    background-image: url(../images/luis-quintero-Fpyn4zHIxEU-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 1;
+    height: 330px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+#gradient-div {
+    height: 30%;
+    width: calc(100vw-45px);
+    -webkit-transform: matrix(-1, 0, 0, -1, 0, 0);
+    -ms-transform: matrix(-1, 0, 0, -1, 0, 0);
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#00cde1), to(#00cde100)) 0 0 no-repeat padding-box;
+    background: transparent -o-linear-gradient(top, #00cde1 0, #00cde100 100%) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #00cde1 0, #00cde100 100%) 0 0 no-repeat padding-box;
+    opacity: 1;
+    -webkit-text-orientation: mixed;
+    text-orientation: mixed;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    padding: 25px 45px
+}
+
+#gradient-div h1 {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    color: #fff;
+    font-size: 20px
+}
+
+.section-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    overflow: hidden;
+    min-height: 45vh
+}
+
+.section-container p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5
+}
+
+.section-container h2 {
+    font-size: 16px;
+    text-align: left
+}
+
+.underlined-title {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #fff
+}
+
+.button {
+    background-color: #00cde1;
+    color: #fff;
+    -webkit-box-shadow: 0 2px 5px #00000029;
+    box-shadow: 0 2px 5px #00000029;
+    padding: 20px
+}
+
+#logo-image {
+    background: transparent url(../images/big_logo2x.png) 0 0 no-repeat padding-box;
+    background-size: cover;
+    min-height: 30vh;
+    border: 0
+}
+
+#credito-facil {
+    background: #f4f4f4 0 0 no-repeat padding-box;
+    opacity: 1;
+    padding: 25px 25px;
+    width: calc(100% - 50px)
+}
+
+#credito-facil h2 {
+    padding: 10px;
+    letter-spacing: 0;
+    color: #00cde1;
+    opacity: 1
+}
+
+#credito-facil p {
+    letter-spacing: 0;
+    color: #0d4269;
+    opacity: 1
+}
+
+#credito-facil #big-logo {
+    width: 183px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #00cde1
+}
+
+#cta-credito-quero {
+    text-align: center;
+    background: #00cde1 0 0 no-repeat padding-box;
+    box-shadow: 0 2px 5px #00000029;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 15px
+}
+
+#somos-uma-ESC {
+    background: #0d4269 0 0 no-repeat padding-box;
+    opacity: 1;
+    color: #fff;
+    letter-spacing: 0;
+    color: #fff;
+    opacity: 1;
+    padding: 10vw 10vw;
+    width: 80vw
+}
+
+#contato .underlined-title,
+#somos-uma-ESC .underlined-title {
+    border-bottom: 1px solid #00cde1
+}
+
+#missao {
+    background: #00cde1 100% 0 no-repeat padding-box;
+    opacity: 1;
+    letter-spacing: 0;
+    color: #fff;
+    opacity: 1;
+    padding: 5vw 10vw;
+    width: 80vw
+}
+
+#missao .underlined-title {
+    border-bottom: 1px solid #0d4269
+}
+
+#contato {
+    color: #0d4269;
+    background: #f4f4f4 0 0 no-repeat padding-box;
+    opacity: 1;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    font-weight: 500
+}
+
+#contato a:hover {
+    cursor: pointer
+}
+
+#email-telefone {
+    border: 1px solid #0d4269;
+    border-radius: 12px;
+    opacity: 1;
+    padding: 3vw;
+    text-align: center;
+    font: Regular 14px/24px Univia Pro;
+    color: #0d4269;
+    opacity: 1
+}
+
+#email-telefone p {
+    text-align: center;
+    letter-spacing: 0;
+    line-height: .5;
+    font-size: 14px
+}
+
+.centered-div {
+    margin: auto;
+    text-align: center;
+    width: 80vw
+}
+
+#address p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 3px
+}
+
+#social-media {
+    margin: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+#social-media img {
+    padding: 0 10px
+}
+
+#footer {
+    background: #d7dbdb 0 0 no-repeat padding-box;
+    opacity: 1;
+    padding: 1vw 5vw;
+    width: 90vw;
+    margin: 0;
+    min-height: 30vh
+}
+
+#footer p {
+    font-size: 10px;
+    color: #828282;
+    text-align: left
+}
+
+#text-separator {
+    display: none
+}
+
+#cta-entrar-bigScreen {
+    display: hidden
+}
+
+@media only screen and (min-width:768px) and (max-width:1200px) {
+    nav {
+        min-width: 608px;
+        max-width: 1008px;
+        align-items: center
+    }
+
+    nav a {
+        font-weight: 500;
+        line-height: 12px
+    }
+
+    header {
+        min-height: 50vh;
+        font-size: 28px;
+        background-image: url(../images/luis-quintero-Fpyn4zHIxEU-unsplash@2x.png);
+        opacity: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center
+    }
+
+    #gradient-div {
+        height: 30%;
+        width: calc(100vw-45px);
+        padding: 25px 45px
+    }
+
+    #gradient-div h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin: auto;
+        width: 70%;
+        padding-bottom: 5%
+    }
+
+    #credito-facil img#big-logo {
+        width: 315px;
+        margin-top: 20px
+    }
+
+    #logo-image {
+        height: 350px
+    }
+
+    #credito-facil,
+    #missao,
+    #somos-uma-ESC {
+        min-height: 30vh;
+        padding-right: 25%;
+        padding-left: 25%;
+        width: calc(100% - 50%)
+    }
+
+    #credito-facil h2,
+    #missao h2,
+    #somos-uma-ESC h2 {
+        font-size: 25px
+    }
+
+    #credito-facil,
+    #missao p,
+    #somos-uma-ESC {
+        font-size: 16px
+    }
+
+    #contato {
+        min-height: 25vh
+    }
+
+    #contato #email-telefone {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 10px;
+        width: fit-content
+    }
+
+    #contato #email-telefone p {
+        padding-right: 10px;
+        padding-left: 10px
+    }
+
+    #contato #address {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    #contato #address p {
+        margin: 0;
+        width: fit-content;
+        padding: 3px
+    }
+
+    #footer {
+        min-height: 15vh;
+        padding-right: 25%;
+        padding-left: 25%;
+        width: calc(100% - 50%)
+    }
+
+    #footer p {
+        font-size: 12px
+    }
+
+    #icon-navbar,
+    i,
+    nav #icon-navbar-container,
+    nav i {
+        display: none
+    }
+
+    #text-separator {
+        display: inline
+    }
+
+    #cta-entrar-bigScreen {
+        background-color: #00cde1;
+        color: #fff;
+        -webkit-box-shadow: 0 2px 5px #00000029;
+        box-shadow: 0 2px 5px #00000029;
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-left: 3%
+    }
+}
+
+@media only screen and (min-width:1201px) and (max-width:1700px) {
+    #icon-navbar {
+        display: none
+    }
+
+    header {
+        min-height: 100vh;
+        width: 100%;
+        opacity: 1;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    #gradient-div h1 {
+        font-size: 50px;
+        padding-right: 20%;
+        padding-left: 20%;
+        width: calc(100% - 40%)
+    }
+
+    .section-container h2 {
+        font-size: 35px;
+        line-height: 1.5
+    }
+
+    nav {
+        padding: 0 2vw;
+        text-align: center;
+        height: 80px;
+        -ms-flex-pack: distribute;
+        justify-content: space-between;
+        -ms-flex-line-pack: baseline;
+        align-content: baseline;
+        width: 70vw;
+        left: 14vw
+    }
+
+    nav a {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0
+    }
+
+    nav #logo {
+        width: 200px
+    }
+
+    .section-container#credito-facil {
+        padding-right: 25%;
+        padding-left: 25%;
+        width: calc(100% - 50%)
+    }
+
+    #credito-facil {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-height: 650px
+    }
+
+    #credito-facil #big-logo {
+        width: 437px;
+        border-bottom: 0;
+        margin: 40px
+    }
+
+    #credito-facil #two-columns-container {
+        border-top: 2px solid #00cde1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+
+    #credito-facil h2 {
+        font-size: 35px;
+        padding: 0;
+        line-height: 49px
+    }
+
+    #cta-credito-quero {
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 16px
+    }
+
+    #missao h2,
+    #somos-uma-ESC h2 {
+        font-size: 26px
+    }
+
+    #credito-facil p,
+    #missao p,
+    #somos-uma-ESC p {
+        font-size: 20px
+    }
+
+    .two-columns {
+        width: 47%;
+        padding: 10px
+    }
+
+    #missao,
+    #somos-uma-ESC {
+        min-height: 30vh;
+        padding-right: 30%;
+        padding-left: 30%;
+        width: calc(100% - 60%)
+    }
+
+    #logo-image {
+        height: 600px;
+        min-height: 500px;
+        background-size: cover;
+        border: 0;
+        background-position: center
+    }
+
+    #missao p,
+    #somos-uma-ESC p {
+        font-size: 20px
+    }
+
+    #contato {
+        padding-top: 2vw;
+        padding-bottom: 2vw
+    }
+
+    #contato #email-telefone {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 5px 50px;
+        width: fit-content
+    }
+
+    #contato #email-telefone p {
+        padding-right: 10px;
+        padding-left: 10px
+    }
+
+    #contato #address p,
+    #contato #email-telefone p {
+        font-size: 16px
+    }
+
+    #contato .smedia-icon {
+        width: 40px
+    }
+
+    #contato #address {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    #contato #address p {
+        width: fit-content;
+        padding: 3px;
+        margin: 0
+    }
+
+    #social-media {
+        margin: 1vw
+    }
+
+    #social-media img {
+        padding: 0 10px
+    }
+
+    #footer {
+        min-height: 8vh;
+        padding-right: 25%;
+        padding-left: 25%;
+        width: calc(100% - 50%)
+    }
+
+    #footer p {
+        font-size: 12px
+    }
+
+    #text-separator {
+        display: inline
+    }
+
+    #icon-navbar,
+    i,
+    nav #icon-navbar-container,
+    nav i {
+        display: none
+    }
+
+    .button {
+        font: Bold 20px/28px univia-pro
+    }
+
+    #cta-entrar-bigScreen {
+        padding: 12px;
+        border-radius: 8px;
+        font: Bold 16px/16px univia-pro;
+        min-width: 70px
+    }
+}
+
+@media only screen and (min-width:1701px) {
+    #icon-navbar {
+        display: none
+    }
+
+    header {
+        min-height: 100vh;
+        font-size: 50px;
+        width: 100%;
+        opacity: 1;
+        background-size: cover;
+        background-repeat: no-repeat
+    }
+
+    #gradient-div {
+        height: 30%;
+        width: calc(100vw-45px);
+        padding: 25px 45px
+    }
+
+    #gradient-div h1 {
+        font-size: 84px;
+        padding-right: 20%;
+        padding-left: 20%;
+        width: calc(100% - 40%)
+    }
+
+    .section-container p {
+        font-size: 24px;
+        line-height: 1.5
+    }
+
+    .section-container h2 {
+        font-size: 35px;
+        line-height: 1.5
+    }
+
+    nav {
+        padding: 0 2%;
+        text-align: center;
+        height: 110px;
+        -ms-flex-pack: distribute;
+        justify-content: space-between;
+        -ms-flex-line-pack: baseline;
+        align-content: baseline;
+        width: 60vw;
+        left: 18vw
+    }
+
+    nav a {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 600;
+        padding: 0;
+        margin: 0
+    }
+
+    nav #logo {
+        width: 230px;
+        margin-bottom: 6px
+    }
+
+    .section-container#credito-facil {
+        padding-right: 25%;
+        padding-left: 25%;
+        width: calc(100% - 50%)
+    }
+
+    #credito-facil {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: 35px;
+        min-height: 700px
+    }
+
+    #credito-facil #big-logo {
+        width: 537px;
+        border-bottom: 0;
+        margin: 60px
+    }
+
+    #credito-facil #two-columns-container {
+        border-top: 2px solid #00cde1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+
+    #credito-facil h2 {
+        font-size: 35px;
+        padding: 0;
+        line-height: 49px
+    }
+
+    #cta-credito-quero {
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 16px
+    }
+
+    #missao h2,
+    #somos-uma-ESC h2 {
+        font-size: 26px
+    }
+
+    #credito-facil,
+    #missao p,
+    #somos-uma-ESC {
+        font-size: 20px
+    }
+
+    .two-columns {
+        width: 47%;
+        padding: 10px
+    }
+
+    #missao,
+    #somos-uma-ESC {
+        min-height: 30vh;
+        padding-right: 30%;
+        padding-left: 30%;
+        width: calc(100% - 60%)
+    }
+
+    #logo-image {
+        height: 80vh;
+        min-height: 500px;
+        background-size: cover;
+        border: 0;
+        background-position: center
+    }
+
+    #missao p,
+    #somos-uma-ESC p {
+        font-size: 25px
+    }
+
+    #contato {
+        padding-top: 2vw;
+        padding-bottom: 2vw
+    }
+
+    #contato #email-telefone {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 5px 50px;
+        width: fit-content
+    }
+
+    #contato #email-telefone p {
+        padding-right: 10px;
+        padding-left: 10px
+    }
+
+    #contato #address p,
+    #contato #email-telefone p {
+        font-size: 22px
+    }
+
+    #contato .smedia-icon {
+        width: 40px
+    }
+
+    #contato #address {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    #contato #address p {
+        width: fit-content;
+        padding: 3px;
+        margin: 0
+    }
+
+    #social-media {
+        margin: 1vw
+    }
+
+    #social-media img {
+        padding: 0 10px
+    }
+
+    #footer {
+        min-height: 8vh;
+        padding-right: 25%;
+        padding-left: 25%;
+        width: calc(100% - 50%)
+    }
+
+    #footer p {
+        font-size: 12px
+    }
+
+    #text-separator {
+        display: inline
+    }
+
+    #icon-navbar,
+    i,
+    nav #icon-navbar-container,
+    nav i {
+        display: none
+    }
+
+    .button {
+        font: Bold 20px/28px univia-pro
+    }
+
+    #cta-entrar-bigScreen {
+        padding: 20px;
+        border-radius: 8px;
+        font: Bold 16px/16px univia-pro;
+        min-width: 86px
+    }
+}
+
+#body-404 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100vh
+}
+
+#container-404 {
+    border: 1px solid #c5c5c5;
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: #f4f4f4;
+    color: #0d4269;
+    padding: 10%;
+    width: 60%;
+    margin: auto;
+    min-width: 500px;
+    text-align: center
+}
+
+#container-404 h1 {
+    color: #00cde1;
+    font-size: 40px
+}
+
+#container-404 a {
+    color: #00cde1;
+    font-weight: 500;
+    text-decoration: none
+}

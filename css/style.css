@@ -131,7 +131,7 @@ nav #icon-navbar strong {
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   nav {
     position: fixed;
     display: -webkit-box;
@@ -273,6 +273,8 @@ nav #icon-navbar strong {
   padding: 0 10px 0 0;
   -webkit-box-shadow: none;
   box-shadow: none;
+  /* TEMPORARY CHANGES */
+  display: none;
 }
 
 #separator-entrar {
@@ -283,7 +285,7 @@ nav #icon-navbar strong {
 /* -----HEADER STYLING----------- */
 
 header {
-  background-image: url("../images/luis-quintero-Fpyn4zHIxEU-unsplash.png");
+  background-image: url("../images/luis-quintero-Fpyn4zHIxEU-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -390,7 +392,7 @@ header {
 
 /* ----SPECIIC SECTIONS---- */
 #logo-image {
-  background: transparent url("../images/big_logo2x.png") 0% 0% no-repeat padding-box;
+  background: transparent url("../images/brooke-cagle-with-logo.jpg") 0% 0% no-repeat padding-box;
   background-size: cover;
   min-height: 30vh;
   border: 0;
@@ -435,6 +437,7 @@ header {
   /* margin: 50px auto 50px auto; */
   /* padding: 0; */
   margin: 15px;
+  display: none;
 }
 
 /* ------Somos uma ESC SECTION------- */
@@ -563,6 +566,12 @@ header {
   display: hidden;
 }
 
+footer {
+  -webkit-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
 /* ------------MEDIA QUERIES BEGIN--------------------------------- */
 /* MEDIA QUERIES FOR I PAD LANDSCAPE AND PORTRAIT */
 
@@ -571,6 +580,7 @@ header {
   /* nav a {
     font: Medium 12px/16px "Univia-Pro";
   } */
+  
   nav {
     min-width: 608px;
     max-width: 1008px;
@@ -588,7 +598,7 @@ header {
     /* border: 3px solid green; */
     font-size: 28px;
     /* width: 100%; */
-    background-image: url("../images/luis-quintero-Fpyn4zHIxEU-unsplash@2x.png");
+    background-image: url("../images/luis-quintero-Fpyn4zHIxEU-unsplash@2x.jpg");
     opacity: 1;
     background-size: cover;
     background-repeat: no-repeat;
@@ -622,7 +632,9 @@ header {
 
   #logo-image {
     height: 350px;
+    background-image: url("../images/brooke-cagle-with-logo@2x.jpg");
   }
+
 
   #credito-facil,
   #somos-uma-ESC,
@@ -736,6 +748,8 @@ header {
     font-size: 12px;
     font-weight: 600;
     margin-left: 3%;
+    /* TEMPORARY CHANGES */
+    display: none;
   }
 }
 
@@ -749,6 +763,7 @@ header {
   header {
     min-height: 100vh;
     width: 100%;
+    background-image: url("../images/luis-quintero-Fpyn4zHIxEU-unsplash@2x.jpg");
     /* background: transparent url('../images/brooke-cagle-NoRsyXmHGpI-unsplash@2x.png') 0% 0% no-repeat padding-box; */
     opacity: 1;
     background-size: cover;
@@ -846,7 +861,8 @@ header {
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 16px;
-    /* margin: 15px; */
+    /* TEMPORARY CHANGES */
+    display: none;
   }
 
   #somos-uma-ESC h2,
@@ -880,6 +896,7 @@ header {
     background-size: cover;
     border: 0;
     background-position: center;
+    background-image: url("../images/brooke-cagle-with-logo@2x.jpg");
   }
 
   #somos-uma-ESC p,
@@ -990,6 +1007,8 @@ header {
     border-radius: 8px;
     font: Bold 16px/16px "univia-pro";
     min-width: 70px;
+    /* TEMPORARY CHANGES */
+    display: none;
   }
 }
 
@@ -1121,7 +1140,8 @@ header {
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 16px;
-    /* margin: 15px; */
+    /* TEMPORARY CHANGES */
+    display: none;
   }
 
   #somos-uma-ESC h2,
@@ -1156,6 +1176,7 @@ header {
     background-size: cover;
     border: 0;
     background-position: center;
+    background-image: url("../images/brooke-cagle-with-logo@2x.jpg");
   }
 
   #somos-uma-ESC p,
@@ -1266,6 +1287,8 @@ header {
     border-radius: 8px;
     font: Bold 16px/16px "univia-pro";
     min-width: 86px;
+    /* TEMPORARY CHANGES */
+    display: none;
   }
 }
 
