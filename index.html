@@ -5,29 +5,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv=" X-UA-Compatible" content="ie=edge" />
-  <!-- Document Title -->
   <title>JaNaConta</title>
   <!-- Meta Description -->
   <!-- <meta name="description" content="Description of the page less than 150 characters"> -->
-  <!-- Recommended favicon format -->
   <link rel="icon" type="image/png" href="./images/Favicon.png">
-  <!-- Apple Touch Icon (at least 200x200px) -->
   <link rel="apple-touch-icon" href="./images/Favicon@2x.png">
-  <!-- To run web application in full-screen -->
   <meta name="apple-mobile-web-app-capable" content="yes">
 
-  <!-- Status Bar Style (see Supported Meta Tags below for available values) -->
-  <!-- Has no effect unless you have the previous meta tag -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <!-- Microsoft Tiles -->
   <meta name="msapplication-config" content="browserconfig.xml" />
   <link rel="preload" href="https://use.typekit.net/cru8tug.css" as="script" crossorigin>
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="https://use.typekit.net/cru8tug.css" />
-  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-  <link rel="stylesheet" href="./css/min.css" />
+  <!-- <link rel="stylesheet" media="screen" href="./css/style.css" /> -->
+  <link media="screen" rel="stylesheet" href="./css/min.css" />
+  <link media="print" href="./css/min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
 
 </head>
@@ -41,12 +34,12 @@
       <a href="#contato">Contato</a>
 
       <div id="icon-navbar-container" class="icon">
-        <!-- <a id="menu-icon" href="#" class="icon" onclick="myFunction(this)"> -->
-        <a class="button" id="cta-entrar">Entrar<span id="separator-entrar"> | </span></a>
+        <a class="button" id="cta-entrar" target="_blank" rel="noopener noreferrer">Entrar<span id="separator-entrar"> |
+          </span></a>
         <i id="icon-navbar" class="fa fa-bars"><strong></strong></i>
-        <!-- </!-->
       </div>
-      <a href="#external-link" class="button" id="cta-entrar-bigScreen">Entrar</a>
+      <a href="#external-link" class="button" id="cta-entrar-bigScreen" target="_blank"
+        rel="noopener noreferrer">Entrar</a>
     </nav>
     <header class="lazy">
       <div id="gradient-div">
@@ -67,7 +60,7 @@
           </p>
         </div>
       </div>
-      <a class="button" id="cta-credito-quero">Quero um empréstimo já</a>
+      <a class="button" id="cta-credito-quero" target="_blank" rel="noopener noreferrer">Quero um empréstimo já</a>
 
     </section>
     <section id="somos-uma-ESC" class="section-container">
@@ -93,18 +86,19 @@
     <section id="contato" class="section-container">
       <h2 class="underlined-title">Contato</h2>
       <div id="email-telefone" class="centered-div">
-        <p>Email: contato@janaconta.com.br</p>
+        <p>Email: <a href="mailto:contato@janaconta.com.br?subject=Empr%C3%A9stimo" target="_blank"
+            rel="noopener noreferrer">contato@janaconta.com.br</a></p>
         <p id="text-separator">|</p>
         <p>Telefone: (92) 3307-2000</p>
         <p>(92) 3042-0846</p>
       </div>
       <div id="social-media" class="centered-div">
-        <a href="https://www.facebook.com/JÁ-NA-CONTA-105148334295564/"><img class=" smedia-icon"
-            src="./images/facebook_icon.svg" alt="facebook-logo" /></a>
-        <a href="https://www.instagram.com/janaconta/"><img class="smedia-icon" src="./images/insta_icon.svg"
-            alt="instagram-logo" /></a>
-        <a href="https://www.linkedin.com/company/janaconta/"><img class="smedia-icon" src="./images/linkedin_icon.svg"
-            alt="linkedin-logo" /></a>
+        <a href="https://www.facebook.com/JÁ-NA-CONTA-105148334295564" target="_blank" rel="noopener noreferrer"><img
+            class=" smedia-icon" src="./images/facebook_icon.svg" alt="facebook-logo" /></a>
+        <a href="https://www.instagram.com/janaconta/" target="_blank" rel="noopener noreferrer"><img
+            class="smedia-icon" src="./images/insta_icon.svg" alt="instagram-logo" /></a>
+        <a href="https://www.linkedin.com/company/janaconta/" target="_blank" rel="noopener noreferrer"><img
+            class="smedia-icon" src="./images/linkedin_icon.svg" alt="linkedin-logo" /></a>
       </div>
       <div id="address" class="centered-div">
         <p>Rua Belém, número 929, Sala 306</p>

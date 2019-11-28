@@ -231,8 +231,8 @@ nav #icon-navbar strong {
     border-radius: 8px;
     padding: 10px 40px;
     margin: 10px 0;
-        /* TEMPORARY CHANGES */
-        display: none;
+    /* TEMPORARY CHANGES */
+    display: none;
   }
 
   #cta-entrar.responsive {
@@ -502,6 +502,16 @@ header {
   opacity: 1;
 }
 
+#email-telefone a:link,
+#email-telefone a:visited {
+  text-decoration: none;
+  color: #0d4269;
+  cursor: pointer;
+}
+
+
+
+
 #email-telefone p {
   text-align: center;
   letter-spacing: 0;
@@ -584,7 +594,7 @@ header {
   /* nav a {
     font: Medium 12px/16px "Univia-Pro";
   } */
-  
+
   nav {
     min-width: 608px;
     max-width: 1008px;
@@ -719,8 +729,8 @@ header {
   }
 
   #footer {
-      /* TEMPORARY */
-  /* min-height: 10vh; */
+    /* TEMPORARY */
+    /* min-height: 10vh; */
     min-height: 5vh;
     padding-right: 25%;
     padding-left: 25%;
@@ -982,8 +992,8 @@ header {
   }
 
   #footer {
-          /* TEMPORARY */
-  /* min-height: 8vh; */
+    /* TEMPORARY */
+    /* min-height: 8vh; */
     min-height: 4vh;
     padding-right: 25%;
     padding-left: 25%;
@@ -1264,8 +1274,8 @@ header {
   }
 
   #footer {
-              /* TEMPORARY */
-  /* min-height: 8vh; */
+    /* TEMPORARY */
+    /* min-height: 8vh; */
     min-height: 4vh;
     padding-right: 25%;
     padding-left: 25%;

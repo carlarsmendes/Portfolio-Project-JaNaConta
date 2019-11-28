@@ -104,7 +104,7 @@ nav #icon-navbar strong {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 2;
     padding-left: 4px
 }
 
@@ -159,65 +159,65 @@ nav #icon-navbar strong {
         -webkit-animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94);
         animation: slide-in-right .5s cubic-bezier(.25, .46, .45, .94)
     }
-}
 
-@-webkit-keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(1000px);
-        transform: translateX(1000px);
-        opacity: 0
+    @-webkit-keyframes slide-in-right {
+        0% {
+            -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+            opacity: 0
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1
+        }
     }
 
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1
+    @keyframes slide-in-right {
+        0% {
+            -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+            opacity: 0
+        }
+
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+            opacity: 1
+        }
     }
-}
 
-@keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(1000px);
-        transform: translateX(1000px);
-        opacity: 0
+    nav.responsive .button {
+        color: #fff;
+        border-radius: 8px;
+        padding: 10px 40px;
+        margin: 10px 0;
+        display: none
     }
 
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1
+    #cta-entrar.responsive {
+        display: none
     }
-}
 
-nav.responsive .button {
-    color: #fff;
-    border-radius: 8px;
-    padding: 10px 40px;
-    margin: 10px 0;
-    display: none
-}
+    nav.responsive i {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-weight: 300
+    }
 
-#cta-entrar.responsive {
-    display: none
-}
+    nav.responsive a {
+        float: none;
+        display: block;
+        font-size: 12px;
+        color: #0d4269;
+        font-weight: 500
+    }
 
-nav.responsive i {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    font-weight: 300
-}
-
-nav.responsive a {
-    float: none;
-    display: block;
-    font-size: 12px;
-    color: #0d4269;
-    font-weight: 500
-}
-
-nav.responsive a:hover {
-    cursor: pointer
+    nav.responsive a:hover {
+        cursor: pointer
+    }
 }
 
 #cta-entrar {
@@ -344,7 +344,7 @@ header {
 #credito-facil {
     background: #f4f4f4 0 0 no-repeat padding-box;
     opacity: 1;
-    padding: 25px;
+    padding: 25px 25px;
     width: calc(100% - 50px)
 }
 
@@ -386,7 +386,7 @@ header {
     letter-spacing: 0;
     color: #fff;
     opacity: 1;
-    padding: 10vw;
+    padding: 10vw 10vw;
     width: 80vw
 }
 
@@ -431,6 +431,13 @@ header {
     font: Regular 14px/24px Univia Pro;
     color: #0d4269;
     opacity: 1
+}
+
+#email-telefone a:link,
+#email-telefone a:visited {
+    text-decoration: none;
+    color: #0d4269;
+    cursor: pointer
 }
 
 #email-telefone p {

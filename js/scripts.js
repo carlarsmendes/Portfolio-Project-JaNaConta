@@ -5,10 +5,8 @@ let $menuIcon = document.getElementById("icon-navbar");
 function myFunction() {
   var $navBar = document.getElementById("myTopnav");
   var $crossIcon = document.getElementById("icon-navbar");
-
   var $buttonCTA = document.getElementById("cta-entrar");
 
-  console.log($navBar);
   if ($navBar.className === "floating-fixed-element topnav slide-in-right") {
     $navBar.className += " responsive";
     $buttonCTA.className += " responsive";
