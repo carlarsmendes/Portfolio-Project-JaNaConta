@@ -28,6 +28,7 @@ section {
 
 nav {
   /* Layout Properties */
+  /* border: 3px solid yellow; */
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,6 +61,7 @@ nav a img {
 }
 
 nav a {
+  /* border: 3px solid greenyellow; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,8 +101,8 @@ nav #icon-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -137,12 +139,13 @@ nav #icon-navbar strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding-right: 15px;
   }
 
   nav a:not(:first-child) {
@@ -653,7 +656,7 @@ header {
   #credito-facil,
   #somos-uma-ESC,
   #missao {
-    min-height: 30vh;
+    min-height: 300px;
     /* border: 3px solid red; */
     padding-right: 25%;
     padding-left: 25%;
