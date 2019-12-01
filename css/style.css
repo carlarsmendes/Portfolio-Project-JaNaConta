@@ -13,6 +13,7 @@ body #main-container {
   overflow-x: hidden;
 }
 
+
 html {
   /* border: 3px solid green; */
   width: 100%;
@@ -455,7 +456,7 @@ header {
   letter-spacing: 0;
   color: #ffffff;
   opacity: 1;
-  padding: 10vw 10vw;
+  padding: 100px 10vw;
   width: 80vw;
 }
 
@@ -470,7 +471,7 @@ header {
   letter-spacing: 0;
   color: #ffffff;
   opacity: 1;
-  padding: 5vw 10vw;
+  padding: 100px 10vw;
   width: 80vw;
 }
 

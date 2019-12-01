@@ -37,5 +37,16 @@ function myFunction() {
 
 $menuIcon.addEventListener("click", myFunction);
 
-var $navBar = document.getElementById("myTopnav");
+// var $navBar = document.getElementById("myTopnav");
+// var navHeight = $navBar.offsetHeight
+// // TRYING THE NAV BAR
 
+
+
+// // var arraySections = document.getElementsByTagName("section");
+// // console.log(arraySections.length)
+// // for(let i = 0; i <= (arraySections.length-1);i++){
+// //   arraySections[i].padding = `${navHeight} 10vw`;
+// //   // arraySections[i].paddingBottom = navHeight;
+// //   console.log(arraySections[i].paddingTop)
+// // };
