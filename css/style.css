@@ -405,7 +405,7 @@ header {
 #logo-image {
   background: transparent url("../images/brooke-cagle-with-logo.jpg") 0% 0% no-repeat padding-box;
   background-size: cover;
-  min-height: 30vh;
+  min-height: 200px;
   border: 0;
 }
 
