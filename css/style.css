@@ -1,7 +1,13 @@
+/* -----GENERAL VARIABLES------ */
+:root {
+  --main-font: "univia-pro";
+}
+
+
 /* -----GENERAL STYLES------------ */
 
 * {
-  font-family: "univia-pro";
+  font-family: var(--main-font);
 }
 
 html,
@@ -18,6 +24,7 @@ html {
   /* border: 3px solid green; */
   width: 100%;
   scroll-behavior: smooth;
+  --scroll-behavior: smooth;
 }
 
 section {
@@ -110,7 +117,6 @@ nav #icon-navbar {
   align-items: center;
   -ms-flex-item-align: center;
   align-self: center;
-  /* font-family: "univia-pro"; */
 }
 
 #icon-navbar.fa.fa-bars::before {
@@ -118,11 +124,10 @@ nav #icon-navbar {
   font-size: 14px;
   vertical-align: middle;
   /* border: 3px solid green; */
-  /* font-family: "univia-pro"; */
 }
 
 nav #icon-navbar strong {
-  font-family: "univia-pro";
+  font-family: var(--main-font);
   /* border: 3px solid yellow; */
   font-weight: 700;
   text-transform: uppercase;
@@ -452,7 +457,6 @@ header {
   background: #0d4269 0% 0% no-repeat padding-box;
   opacity: 1;
   color: #ffffff;
-  /* font: Book 14px/20px Univia Pro; */
   letter-spacing: 0;
   color: #ffffff;
   opacity: 1;
@@ -485,8 +489,8 @@ header {
   color: #0d4269;
   background: #f4f4f4 0% 0% no-repeat padding-box;
   opacity: 1;
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
   font-weight: 500;
 }
 
@@ -500,8 +504,8 @@ header {
   opacity: 1;
   padding: 3vw;
   text-align: center;
-  font: Regular 14px/24px Univia Pro;
-
+  /* font: Regular 14px/24px Univia Pro; */
+  font: Regular 14px/24px var(--main-font);
   color: #0d4269;
   opacity: 1;
 }
@@ -1021,13 +1025,13 @@ header {
 
   /* ---STYLING BUTTON ON NAV BAR-------- */
   .button {
-    font: Bold 20px/28px "univia-pro";
+    font: Bold 20px/28px var(--main-font);
   }
 
   #cta-entrar-bigScreen {
     padding: 12px;
     border-radius: 8px;
-    font: Bold 16px/16px "univia-pro";
+    font: Bold 16px/16px var(--main-font);
     min-width: 70px;
     /* TEMPORARY CHANGES */
     display: none;
@@ -1303,13 +1307,13 @@ header {
 
   /* ---STYLING BUTTON ON NAV BAR-------- */
   .button {
-    font: Bold 20px/28px "univia-pro";
+    font: Bold 20px/28px var(--main-font);
   }
 
   #cta-entrar-bigScreen {
     padding: 20px;
     border-radius: 8px;
-    font: Bold 16px/16px "univia-pro";
+    font: Bold 16px/16px var(--main-font);
     min-width: 86px;
     /* TEMPORARY CHANGES */
     display: none;
