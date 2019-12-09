@@ -1147,6 +1147,8 @@ header {
   }
 
   #credito-facil {
+    /* padding-top: 110px;
+    padding-bottom: 110px; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1216,6 +1218,8 @@ header {
 
   #somos-uma-ESC,
   #missao {
+    padding-top: 140px;
+    padding-bottom: 140px;
     min-height: 30vh;
     padding-right: 30%;
     padding-left: 30%;
