@@ -248,7 +248,7 @@ nav #icon-navbar strong {
     display: none;
   }
 
-  nav.responsive i {
+  nav.responsive #icon-navbar {
     position: absolute;
     right: 20px;
     top: 20px;

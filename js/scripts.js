@@ -10,7 +10,9 @@ function myFunction() {
   if ($navBar.className === "floating-fixed-element topnav slide-in-right") {
     $navBar.className += " responsive";
     $buttonCTA.className += " responsive";
-    $crossIcon.className = "fa fa-times";
+    // $crossIcon.className = "fa fa-times";
+    $crossIcon.src = "./images/icon_menu_cross.svg";
+
     $crossIcon.innerText = "";
 
     //Target all the links
@@ -21,7 +23,9 @@ function myFunction() {
       elem.addEventListener("click", () => {
         $navBar.className = "floating-fixed-element topnav slide-in-right";
         $buttonCTA.className = "button";
-        $crossIcon.className = "fa fa-bars";
+        // $crossIcon.className = "fa fa-bars";
+        $crossIcon.src = "./images/icon_menu_hamburguer.svg";
+
         $crossIcon.innerText = "";
       });
     }
@@ -30,7 +34,8 @@ function myFunction() {
   ) {
     $navBar.className = "floating-fixed-element topnav slide-in-right";
     $buttonCTA.className = "button";
-    $crossIcon.className = "fa fa-bars";
+     // $crossIcon.className = "fa fa-bars";
+     $crossIcon.src = "./images/icon_menu_hamburguer.svg";
     $crossIcon.innerText = "";
   }
 }
