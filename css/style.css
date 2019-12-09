@@ -499,6 +499,15 @@ header {
   cursor: pointer;
 }
 
+#ANFAC-logo {
+  width: 183px;
+  height: 51px;
+  background: url("./../images/Logo_ANFAC-horizontal.png")no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
 #email-telefone {
   border: 1px solid #0d4269;
   border-radius: 12px;
@@ -654,7 +663,7 @@ header {
   }
 
   #logo-image {
-    height: 350px;
+    min-height: 358px;
     background-image: url("../images/brooke-cagle-with-logo@2x.jpg");
   }
 
@@ -684,6 +693,14 @@ header {
 
   #contato {
     min-height: 25vh;
+  }
+
+  #ANFAC-logo {
+    width: 183px;
+    height: 55px;
+    background: url("./../images/Logo_ANFAC-horizontal.png")no-repeat;
+    margin-bottom: 50px;
+    margin-top: 30px;
   }
 
   #contato #email-telefone {
@@ -933,6 +950,14 @@ header {
     padding-top: 2vw;
     padding-bottom: 2vw;
     /* font-weight: 500; */
+  }
+
+  #ANFAC-logo {
+    width: 247px;
+    height: 75px;
+    background: url("./../images/Logo_ANFAC-horizontal@2x.png")no-repeat;
+    margin-bottom: 50px;
+    margin-top: 30px;
   }
 
   #contato #email-telefone {
@@ -1199,7 +1224,7 @@ header {
 
   #logo-image {
     height: 80vh;
-    min-height: 500px;
+    min-height: 550px;
     background-size: cover;
     border: 0;
     background-position: center;
@@ -1215,6 +1240,16 @@ header {
     padding-top: 2vw;
     padding-bottom: 2vw;
     /* font-weight: 500; */
+  }
+
+  #ANFAC-logo {
+    width: 247px;
+    height: 75px;
+    background: url("./../images/Logo_ANFAC-horizontal@2x.png")no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    object-fit: cover;
   }
 
   #contato #email-telefone {
