@@ -502,7 +502,7 @@ header {
 #ANFAC-logo {
   width: 183px;
   height: 51px;
-  background: url("./../images/Logo_ANFAC-horizontal.png")no-repeat;
+  background: url("./../images/Logo_ANFAC-horizontal@2x.png")no-repeat;
   background-size: cover;
   object-fit: cover;
   margin-bottom: 40px;
@@ -699,7 +699,7 @@ header {
   #ANFAC-logo {
     width: 183px;
     height: 55px;
-    background: url("./../images/Logo_ANFAC-horizontal.png")no-repeat;
+    background: url("./../images/Logo_ANFAC-horizontal@2x.png")no-repeat;
     background-size: cover;
     object-fit: cover;
     margin-bottom: 50px;
